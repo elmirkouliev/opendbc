@@ -381,7 +381,7 @@ class CAR(Platforms):
   # Hyundai TUCONS 2025
   HYUNDAI_TUCSON_2025 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Hyundai Tucson Hybrid 2025", "All", car_parts=CarParts.common([CarHarness.hyundai_n]))],
-    CarSpecs(mass=1836, wheelbase=2.700000047683716, steerRatio= 13),
+    CarSpecs(mass=1836, wheelbase=2.70, steerRatio= 13),
   )
 
   HYUNDAI_SANTA_CRUZ_1ST_GEN = HyundaiCanFDPlatformConfig(
