@@ -9,6 +9,7 @@ Ecu = CarParams.Ecu
 
 
 FW_VERSIONS = {
+  
   CAR.HYUNDAI_AZERA_6TH_GEN: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00IG__ SCC F-CU-      1.00 1.00 99110-G8100         ',
@@ -1078,6 +1079,25 @@ FW_VERSIONS = {
       b'\xf1\x00CE  MFC  AT USA LHD 1.00 1.06 99211-KL000 230915',
     ],
   },
+
+  CAR.HYUNDAI_TUCSON_2025: {
+    # ... existing entries above ...
+
+    # 2025 Hyundai Tucson Hybrid (NX4 refresh) - add these firmware versions:
+    (Ecu.fwdCamera, 0x7C4, None): [
+      b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-N7030 C55',
+    ],
+    (Ecu.fwdRadar, 0x7D0, None): [
+      b'\xf1\x00NX4__               1.00 1.02 99110N7100',
+    ],
+    (Ecu.combinationMeter, 0x7C6, None): [
+      b'\xf1\x00351',
+    ],
+    (Ecu.cornerRadar, 0x7B7, None): [
+      b'\xf1\x003D',
+    ],
+  },
+
   CAR.HYUNDAI_TUCSON_4TH_GEN: {
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00NX4 FR_CMR AT CAN LHD 1.00 1.00 99211-N9220 14K',
