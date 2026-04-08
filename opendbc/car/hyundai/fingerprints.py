@@ -1081,20 +1081,11 @@ FW_VERSIONS = {
   },
 
   CAR.HYUNDAI_TUCSON_2025: {
-    # ... existing entries above ...
-
-    # 2025 Hyundai Tucson Hybrid (NX4 refresh) - add these firmware versions:
-    (Ecu.fwdCamera, 0x7C4, None): [
+    (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-N7030 C55',
     ],
-    (Ecu.fwdRadar, 0x7D0, None): [
-      b'\xf1\x00NX4__               1.00 1.02 99110N7100',
-    ],
-    (Ecu.combinationMeter, 0x7C6, None): [
-      b'\xf1\x00351',
-    ],
-    (Ecu.cornerRadar, 0x7B7, None): [
-      b'\xf1\x003D',
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00NX4__               1.00 1.02 99110-N7100         ',
     ],
   },
 
